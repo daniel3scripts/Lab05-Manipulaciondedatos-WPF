@@ -1,0 +1,15 @@
+.vs
+Datos/bin
+Datos/obj
+Business/bin
+Business/obj
+Entity/bin
+Entity/obj
+Datos/Properties
+Datos/Properties
+Datos/Properties
+*.nuget
+*.csproj
+*.csproj.user
+*.sln
+
