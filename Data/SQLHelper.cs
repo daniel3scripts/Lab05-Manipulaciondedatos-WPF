@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+
 namespace Data
 {
     static class SQLHelper
     {
-        public static string Connection { get; set; } = "Data Source=HUGO-PC\\MSSQLSERVER2014;" +
-                                                   "Initial Catalog=Neptuno;Integrated Security=true";
+        public static string Connection { get; set; } = @"Data Source=server name;" +
+                                                   "Initial Catalog=database name;Integrated Security=true";
         /// <summary> 
         /// Set the connection, command, and then execute the command with non query. 
         /// </summary> 
@@ -33,19 +34,18 @@ namespace Data
         }
 
         public static SqlDataReader ExecuteReader(String connectionString, String
-            commandText,CommandType commandType,params SqlParameter[] parameters)
+            commandText, CommandType commandType, params SqlParameter[] parameters)
         {
             SqlConnection conn = new SqlConnection(connectionString);
             using (SqlCommand cmd = new SqlCommand(commandText, conn))
             {
-                cmd.CommandType= commandType;
-                cmd.Parameters.AddRange (parameters);
+                cmd.CommandType = commandType;
+                cmd.Parameters.AddRange(parameters);
                 conn.Open();
 
                 SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 return reader;
             }
         }
-
     }
 }

@@ -1,0 +1,9 @@
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\bin\Debug\Data.dll
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\bin\Debug\Data.pdb
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\bin\Debug\Entity.dll
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\bin\Debug\Entity.pdb
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\obj\Debug\Data.csproj.CopyComplete
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\obj\Debug\Data.dll
+D:\DANIEL\Desa_Emp_Avanzadas\proys\Lab05\Data\obj\Debug\Data.pdb

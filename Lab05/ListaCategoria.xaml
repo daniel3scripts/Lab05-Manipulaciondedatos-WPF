@@ -1,0 +1,53 @@
+﻿<Window x:Class="Lab05.ListaCategoria"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab05"
+        mc:Ignorable="d"
+        Title="ListaCategoria" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+        
+    </Window.Resources>
+
+
+
+
+    <Grid>
+        <StackPanel>
+            <Label Content="LISTA DE CATEGORIAS" ></Label>
+        
+            <DataGrid Height="300px" x:Name="dgvCategoria" AutoGenerateColumns="True"
+                      GridLinesVisibility="Vertical" HeadersVisibility="All"
+                      Background="LightBlue" RowBackground="LightYellow"
+                      AlternatingRowBackground="LightCoral"
+                      BorderBrush="Blue" BorderThickness="5"
+                      SelectionChanged="DgvCategoria_SelectionChanged">
+
+            </DataGrid>
+        </StackPanel>
+
+
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button x:Name="btnConsultar" Margin="10px 10px 10px 10px"
+                    Click="BtnConsultar_Click" Height="40" 
+                    Width="150">Consultar</Button>
+            <Button x:Name="btnNuevo" Margin="10px 10px 10px 10px"
+                    Click="BtnNuevo_Click" Height="40" 
+                    Width="150" >Nuevo</Button>
+        </StackPanel>
+        
+       
+
+
+
+
+    </Grid>
+</Window>
